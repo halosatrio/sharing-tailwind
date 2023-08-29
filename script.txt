@@ -1,0 +1,91 @@
+# opening
+hari ini saya mau sharing tentang tools yg sering saya pakai untuk ngerjain personal project. hampir semua personal project saya pakai ini.
+
+# slide 1
+gambar: tailwindcss
+
+# slide 2
+gambar: meme saya bang
+siapa di sini yang sudah tahu dan sering pakai tailwindcss??
+
+# slide 3
+-> back to slide 1
+tailwindcss tuh apasih?? tailwindcss tuh css framework yg digunakan untuk styling. jadi kita pakai class, bukan nulis vanila css.
+kalau kalian udah pernah pakai bootstrap, nah itu mirip bootstrap but not really
+bedanya dengan bootstrap, kalau bootstrap itu component class yg stylingnya opionated,
+kalau tailwindcss itu lebih ke utility class, yg stylingnya bisa kita custom sendiri.
+seperti nulis inline-css but not really
+
+gambar: meme css inline
+-> buka web tailwind, tunjukin gimana sih tailwind itu.
+-> core concept: text-lg, mb-4, py-4, border, bg-white
+-> udah termasuk pseudo class, hover, focus, disabled, dll
+-> lightweight karena purge unused class
+
+# slide 4
+kenapa pake tailwind sih?
+
+gambar: tailwind-meme.jpeg (comparison vanilla css vs tailwind)
+
+karena menurut ghuweh lebih cepet pake tailwind daripada nulis vanila css
+saya orangnya suka nulis css, dan pake tailwind tuh kayak nulis css but not really
+daripada pake component library yg bloated dan stylingnya udah pre-determined, saya lebih suka ngoprek styling sesuai kebutuhan saya
+
+# slide 5
+-> langsung ke instalasi
+-> buka tailwind docs, installation
+-> kalo kalian pake vscode install plugins tailwind-intelisense
+
+# slide 6
+fitur-fitur tailwind yg ghuweh personally suka:
+## responsive design
+@mediamax-width: 600px {
+  body {
+    background-color: lightblue;
+  }
+}
+
+class="md:bg-sky-500"
+
+-> lihatin tailwind docs
+
+## built-in dark mode
+-> lihatin blog ghuweh bayubit.dev
+-> lihatin codebase blog ghuweh, tunjukin darkmodenya gimana
+
+
+# slide 7
+di tailwind kita juga bisa custom seperti yg kita mau.
+di versi yg terbaru v3, misal kita mau specific margin 5px, gak ada tuh, m-1: 4px, m-2: 8px
+itu kita bisa tulis class="m-[5px]"
+
+atau misal kita mau pakai color palete kita sendiri. itu bisa extends classname
+-> tunjukin repo bayubit extends style
+
+kalau kalian mau approach kaya bootstrap misal: btn-primary, itu juga bisa
+bikin global class name di global.css terus pakai @apply
+
+# slide 8
+pros and cons (buat ghuweh pribadi)
+pros:
+- fast development and good DX
+- small bundle size
+- fully customize
+
+cons:
+- ugly ass HTML
+- requires tooling and boilerplate
+- no separation of concern
+
+untuk siapa sih tailwind itu?
+untuk orang yg paham css dan ingin merasakan developer experience yg cepat. ship fast
+gambar: meme spiderman
+
+(mungkin) tidak untuk orang yg dasar cssnya belum kuat
+kalau kalian dasar cssnya belum kuat, tailwind tidak akan menyelamatkan kalian.
+kalo kalian center div aja masih belum kebayang gimana caranya pake css biasa, tailwind gak bisa bikin lebih cepat
+
+# slide 9
+gambar: meme bang-udah-bang
+
+DONE
